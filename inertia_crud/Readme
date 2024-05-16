@@ -1,0 +1,32 @@
+Before you can run the application, you need to download PHP version 8.0.2. Which is downloaded from the official PHP website. Once on the download page, search for version 8.0.2 and select the appropriate installer for your operating system. Download the file and follow the installation instructions provided by the installer.
+
+Once PHP is installed, it is also necessary to install Node.js, preferably the most recent version available. To download Node.js, visit the official Node.js website and select the download option corresponding to your operating system. Download the installer and run it following the instructions provided.
+
+Once these dependencies have been installed, you will also need to download Composer. To do this, visit the official Composer website and follow the download instructions for your operating system. Once the file is downloaded, follow the installation instructions provided.
+
+Once you have completed the installation of PHP, Node.js and Composer, you can proceed with configuring your application. Open a terminal or command line in your project directory and run the following commands:
+
+#npm run dev
+
+If this command is executed successfully, it means that everything is installed correctly. However, if you encounter any errors, you may need to run the following additional commands:
+
+#npm install
+#npm run build
+#npm run dev
+
+Once you have successfully configured your application, you can run the development server using the following command:
+
+#php artisan serve
+
+It is important to note that you must also keep the npm run dev command running at the same time to ensure the correct functioning of the application.
+
+If you want to run unit tests, you can do so by running the following command on Windows:
+
+#php artisan test
+#vendor\bin\phpunit
+
+And on macOS or Linux:
+
+./vendor/bin/phpunit
+
+To use the database, it's necessary to employ Laragon, a tool designed for technical teams that facilitates the creation of various development environments. Through Laragon, the database sent via email will be uploaded.
